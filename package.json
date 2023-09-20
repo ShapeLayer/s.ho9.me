@@ -1,0 +1,28 @@
+{
+  "name": "s.ho9.me",
+  "module": "src/index.tsx",
+  "type": "module",
+  "scripts": {
+    "db:push": "bunx drizzle-kit push:sqlite",
+    "db:studio": "bunx drizzle-kit studio",
+    "dev": "concurrently \"bun run --watch src/index.tsx\" \"bun run tw:dev\"",
+    "tw": "bunx tailwindcss -i ./src/styles/styles.css -o ./tailwind-gen/styles.css",
+    "tw:dev": "bunx tailwindcss -i ./src/styles/styles.css -o ./tailwind-gen/styles.css --watch"
+  },
+  "devDependencies": {
+    "bun-types": "latest",
+    "concurrently": "^8.2.1",
+    "drizzle-kit": "^0.19.13",
+    "tailwindcss": "^3.3.3",
+    "typed-html": "^3.0.1"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@elysiajs/html": "^0.6.6",
+    "@libsql/client": "^0.3.4",
+    "drizzle-orm": "^0.28.6",
+    "elysia": "^0.6.24"
+  }
+}
