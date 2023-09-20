@@ -1,5 +1,5 @@
 import * as elements from 'typed-html'
-import { URLConn } from '@/lib/types'
+import { URLConn } from '@/db/schema'
 
 export const GenerateResult = ({ origin, shortURL}: URLConn) => {
   const outputurl = `${process.env.baselink}/${ shortURL }`
