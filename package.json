@@ -7,9 +7,11 @@
     "db:studio": "bunx drizzle-kit studio",
     "dev": "concurrently \"bun run --watch src/index.tsx\" \"bun run tw:dev\"",
     "tw": "bunx tailwindcss -i ./src/styles/styles.css -o ./tailwind-gen/styles.css",
-    "tw:dev": "bunx tailwindcss -i ./src/styles/styles.css -o ./tailwind-gen/styles.css --watch"
+    "tw:dev": "bunx tailwindcss -i ./src/styles/styles.css -o ./tailwind-gen/styles.css --watch",
+    "run": "concurrently \"bun run src/index.tsx\" \"bun run tw:dev\""
   },
   "devDependencies": {
+    "@flydotio/dockerfile": "^0.4.10",
     "bun-types": "latest",
     "concurrently": "^8.2.1",
     "drizzle-kit": "^0.19.13",

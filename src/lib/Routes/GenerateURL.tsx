@@ -11,7 +11,7 @@ export const GenerateURL = async (requestURL: string) => {
     return queried
   let generated
   while (true) {
-    generated = crypto.randomBytes(15).toString('hex')
+    generated = crypto.randomBytes(process.env.GEN_LINK_LEN ? Number(process.env.GEN_LINK_LEN) : 7).toString('hex')
     queried = await RouteStorage.get(generated)
     if (queried === undefined) break
   }

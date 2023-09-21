@@ -9,7 +9,7 @@ export const SearchInput = () => {
         method="post"
         hx-post="/generate_url"
         hx-target="#gen-result"
-        hx-swap="outerHTML"
+        hx-swap="innerHTML"
         hx-include="[name='url']"
       >
         <div class="relative w-full max-w-xl mx-auto bg-white rounded-full h-16 lg:max-w-none">
