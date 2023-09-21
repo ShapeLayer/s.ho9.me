@@ -11,7 +11,6 @@
     "run": "concurrently \"bun run src/index.tsx\" \"bun run tw:dev\""
   },
   "devDependencies": {
-    "@flydotio/dockerfile": "^0.4.10",
     "bun-types": "latest",
     "concurrently": "^8.2.1",
     "drizzle-kit": "^0.19.13",
