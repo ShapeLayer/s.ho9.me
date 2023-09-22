@@ -30,4 +30,4 @@ const app = new Elysia()
   .get('/styles.css', () => Bun.file('./tailwind-gen/styles.css'))
   .get('/:id', async ({ html, params: { id } }) => 
     html(await ShortURLRequest(id)))
-  .listen(3000)
+  .listen(process.env.PORT ? Number(process.env.PORT) : 3000)
