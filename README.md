@@ -1,8 +1,8 @@
 # s.ho9.me
 
-(WIP)
+[Site](https://s.ho9.me)  
 
-New s.ho9.me for BETH([Bun](https://bun.sh/), [Elysia](https://elysiajs.com/), [Turso](https://turso.tech/), [HTMX](https://htmx.org/)) stack testing.
+New s.ho9.me using BETH([Bun](https://bun.sh/), [Elysia](https://elysiajs.com/), [Turso](https://turso.tech/), and [HTMX](https://htmx.org/)).  
 
 ## Getting Started
 
