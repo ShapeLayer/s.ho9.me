@@ -40,7 +40,7 @@ export class RouteStorage {
 
   static get = async (id: string) => {
     // If static RouteStorage instance not initialized, Initialize satatic RouteStorage instance.
-    if (RouteStorage.storage !== undefined) await RouteStorage.init()
+    if (RouteStorage.storage === undefined) await RouteStorage.init()
 
     // Fixed Routes
     if (RouteStorage.storage!.fixed[id] !== undefined) return RouteStorage.storage!.fixed[id]
