@@ -6,7 +6,7 @@ New s.ho9.me using [Bun](https://bun.sh/), [Elysia](https://elysiajs.com/), [Tur
 
 ## Getting Started
 
-**Initialize Database**
+**Initialize Database**  
 Add db information to dotfile  
 
 _`.env.local`_:  
