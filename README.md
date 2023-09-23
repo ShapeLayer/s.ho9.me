@@ -2,7 +2,7 @@
 
 [Site](https://s.ho9.me)  
 
-New s.ho9.me using BETH([Bun](https://bun.sh/), [Elysia](https://elysiajs.com/), [Turso](https://turso.tech/), and [HTMX](https://htmx.org/)).  
+New s.ho9.me using [Bun](https://bun.sh/), [Elysia](https://elysiajs.com/), [Turso](https://turso.tech/), and [HTMX](https://htmx.org/).  
 
 ## Getting Started
 
