@@ -1,4 +1,4 @@
-import * as elements from 'typed-html'
+import * as elements from '@kitajs/html'
 import { RouteStorage } from '@/lib/Routes/RouteStorage'
 // import { URLConn } from '@/lib/types'
 

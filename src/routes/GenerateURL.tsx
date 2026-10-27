@@ -1,4 +1,4 @@
-import * as elements from 'typed-html'
+import * as elements from '@kitajs/html'
 import { GenerateURL as genURL } from '@/lib/Routes/GenerateURL'
 import { GenerateResult } from '@/lib/Components/Hero/GenerateResult'
 

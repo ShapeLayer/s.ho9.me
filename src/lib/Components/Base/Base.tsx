@@ -1,7 +1,7 @@
-import * as elements from 'typed-html'
+import * as elements from '@kitajs/html'
 import { Head, CompactHead } from './Head'
 
-export const Base = ({ children }: elements.Children) => `
+export const Base = ({ children }: elements.PropsWithChildren) => `
 <!DOCTYPE html>
 <html lang="ko">
 
@@ -12,7 +12,7 @@ ${Head}
 ${children}
 `
 
-export const CompactBase = ({ children }: elements.Children) => `
+export const CompactBase = ({ children }: elements.PropsWithChildren) => `
 <!DOCTYPE html>
 <html lang="ko">
 

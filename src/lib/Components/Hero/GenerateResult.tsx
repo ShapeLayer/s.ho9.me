@@ -1,4 +1,4 @@
-import * as elements from 'typed-html'
+import * as elements from '@kitajs/html'
 import { URLConn } from '@/db/schema'
 
 export const GenerateResult = ({ origin, shortURL}: URLConn) => {
@@ -39,4 +39,3 @@ export const GenerateResult = ({ origin, shortURL}: URLConn) => {
     </div>
   )
 }
-
