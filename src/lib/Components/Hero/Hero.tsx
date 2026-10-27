@@ -1,4 +1,4 @@
-import * as elements from 'typed-html'
+import * as elements from '@kitajs/html'
 import { SearchInput } from './SearchInput'
 import { GenerateResult } from './GenerateResult'
 

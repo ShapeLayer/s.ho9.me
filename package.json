@@ -3,7 +3,9 @@
   "module": "src/index.tsx",
   "type": "module",
   "scripts": {
-    "db:push": "bunx drizzle-kit push:sqlite",
+    "db:push": "bunx drizzle-kit push",
+    "db:generate": "bunx drizzle-kit generate",
+    "db:migrate": "bunx drizzle-kit migrate",
     "db:studio": "bunx drizzle-kit studio",
     "dev": "concurrently \"bun run --watch src/index.tsx\" \"bun run tw:dev\"",
     "tw": "bunx tailwindcss -i ./src/styles/styles.css -o ./tailwind-gen/styles.css",
@@ -11,19 +13,22 @@
     "run": "concurrently \"bun run src/index.tsx\" \"bun run tw:dev\""
   },
   "devDependencies": {
-    "bun-types": "latest",
-    "concurrently": "^8.2.1",
-    "drizzle-kit": "^0.19.13",
-    "tailwindcss": "^3.3.3",
-    "typed-html": "^3.0.1"
+    "@kitajs/html": "^4.1.0",
+    "bun-types": "^1.4.4",
+    "concurrently": "^10.0.6",
+    "drizzle-kit": "^0.31.11",
+    "tailwindcss": "^3.4.17"
   },
   "peerDependencies": {
-    "typescript": "^5.0.0"
+    "typescript": "^5.9.3"
+  },
+  "overrides": {
+    "esbuild": "0.25.12"
   },
   "dependencies": {
-    "@elysiajs/html": "^0.6.6",
-    "@libsql/client": "^0.3.4",
-    "drizzle-orm": "^0.28.6",
-    "elysia": "^0.6.24"
+    "@elysiajs/html": "^1.4.2",
+    "@libsql/client": "^0.18.0",
+    "drizzle-orm": "^0.45.4",
+    "elysia": "^1.4.30"
   }
 }

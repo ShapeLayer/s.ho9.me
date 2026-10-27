@@ -1,6 +1,6 @@
 import { Elysia, t } from 'elysia'
 import { html } from '@elysiajs/html'
-import * as elements from 'typed-html'
+import * as elements from '@kitajs/html'
 
 /* JSX Components */
 import { Base } from '@/lib/Components/Base/Base'
